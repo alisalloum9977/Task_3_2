@@ -1,0 +1,325 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+h1{
+  font-size: 3rem;
+}
+h2{
+  font-size: 2.5rem;
+}
+h3{
+  font-size: 2rem;
+}
+p{
+  font-size: 1.5rem;
+}
+html{
+  overflow-x: hidden;
+}
+/* ***************************** */
+nav{
+  background-color: rgb(51, 51, 51);
+  width: 100vw;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  position: fixed;
+}
+.first-nav-part , .second-nav-part{
+  width: fit-content;
+}
+nav a{
+  color: white;
+  text-decoration: none;
+  transition: 0.6s all 0s;
+  margin: 0px 10px;
+}
+
+nav a:hover{
+  color: yellow;
+}
+/* ***************************** */
+.hero{
+  background-image:url(./../images/school2.jpg);
+  width: 100vw;
+  /* height: calc(100vh - 80px); */
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.hero h1{
+  color: white;
+  height: max-content;
+  width: max-content;
+  background-color: rgb(84, 117, 141);
+  padding: 20px;
+  font-size: 55px;
+  border-radius: 4px;
+  text-align: center;
+}
+/* ***************************** */
+
+/* ***************************** */
+#aboutUs , #ourServices , #specialization , #ourTeachers , #plans{
+  width: 100vw;
+  height: max-content;
+  background-color: rgb(252, 212, 190);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+} 
+#aboutUs{
+  background-color: rgb(242, 249, 252);
+  justify-content: center;
+  padding-top: 20px;
+  height: max-content;
+  height: max-content;
+  padding: 200px 0px;
+}
+
+#aboutUs  p{
+  width: 90%;
+  margin: auto;
+  margin-top: 20px ;
+}
+/* ********************************** */
+
+#ourServices .child{
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  gap: 30px;
+  background-color: white;
+  margin: 10px 10px;
+  border-radius: 5px;
+  
+}
+#ourServices .container .card{
+  background-color: white;
+  width: 30%;
+  padding: 15px;
+  margin: 0 10px;
+  border-radius: 5px;
+}
+#ourServices h1{
+  margin-bottom: 20px;
+}
+ .container{
+  display: flex;
+  height: 50%;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+ .card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 300px;
+}
+/* ***************************** */
+#specialization{
+  width: 100vw;
+  background-color: rgb(242, 249, 252);
+}
+#specialization .container{
+  display: flex;
+  gap: 100px;
+  flex-wrap: wrap;
+  margin-top: 50px;}
+#specialization .container .card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 45px;
+  background-color: #eee;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+
+}
+#specialization h3{
+  text-align: center;
+}
+#specialization .card p{
+  margin-bottom: -20px;
+}
+@media (max-width: 992px ){
+  #specialization .card , #ourTeachers .card , #plans .card{
+    width: 500px;
+    margin: auto;
+  }
+}
+/* ***************************** */
+#ourTeachers{
+  width: 100vw;
+  height: max-content;
+}
+#ourTeachers .container{
+  margin-top: 40px;
+  gap: 20px;
+}
+#ourTeachers .container .card img{
+  width: 200px;
+}
+#ourTeachers .container .card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 45px;
+  background-color: #eee;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+
+}
+#ourTeachers .container .card .para{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+}
+/* ***************************** */
+#plans{
+  background-color: rgb(242, 249, 252);
+  width: 100vw;
+  height: max-content;
+}
+#plans img{
+  width: 200px;
+}
+#plans {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#plans .container{
+  gap: 20px;
+}
+#plans .container .card{
+  background-color: rgb(245, 222, 176);
+  border-radius: 13px;
+  padding: 13px;
+  width: 336px;
+  height: 545px;
+}
+#plans .container .card img{
+  width: 300px;
+}
+#plans .container .card .box{
+  border: 2px solid rgb(255, 215, 0);
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgb(253, 233, 140);
+}
+#plans .container .card ul{
+  margin-left: -160px;
+}
+#plans h1{
+  margin-bottom: 20px;
+}
+/* ***************************** */
+#contactUs{
+  background-color: rgb(252, 212, 190);
+  padding: 50px 0;
+}
+#contactUs .container2{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+#contactUs .container2 .form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#contactUs .container2 .form label{
+  align-self: flex-start;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+#contactUs .container2 .form input{
+  width: 300px;
+}
+#contactUs .container2  button{
+background-color: #333;
+color: white;
+padding: 5px 40px;
+border-radius: 7px;
+margin-top: 20px;
+transition: 0.4s;
+}
+#contactUs .container2  button:hover{
+  color: black;
+  background-color: yellow;
+  cursor: pointer;
+}
+.contact-info{
+  /* padding-top: 40px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact-info p{
+  font-size: 13px;
+}
+/*****************************/
+footer{
+  width: 100vw;
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+footer ul{
+  list-style-type: none;
+  display: flex;
+  gap: 15px;
+}
+footer ul li a{
+text-decoration: none;
+color: white;
+transition: 0.5s;
+}
+footer ul li a:hover{
+  color: yellow;
+}
+/* ***************************** */
+
+
+
+/*My custom framework*/
+
+.flex-wrap{
+  flex-wrap: wrap;
+}
+.d-flex{
+  display: flex;
+}
+.justify-contect-between{
+  justify-content: space-between;
+}
+.text-center{
+  text-align: center;
+}
+
